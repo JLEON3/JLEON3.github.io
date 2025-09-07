@@ -1,7 +1,26 @@
 ---
-title: "Jonathan Leon"
+title: "Hello"
 ---
+Welcome to my page!
 
-This is a Quarto website.
+# About Me  
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+I'm an insurance professional pursuing a **Master of Science in Insurance Management** with a concentration in **Applied Business Analytics** at Boston University.  
+
+# Portfolio  
+
+This site will feature my ongoing academic projects during my studies.  
+
+# Courses  
+
+**Current Course**  
+- Cloud Analytics for Business  
+
+**Completed Courses**  
+- Project Management  
+- Financial Concepts  
+- Enterprise Risk Management  
+- Quantitative and Qualitative Decision Making  
+- Business Analytics Foundations  
+
+

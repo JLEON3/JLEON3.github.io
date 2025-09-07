@@ -5,17 +5,20 @@ website:
   title: "Jonathan Leon"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+      - text: Home
+        href: index.qmd
+      - text: Projects
+        menu:
+          - text: Project 1
+            href: projects/project1.qmd
 
 format:
   html:
     theme:
-      - cosmo
+      - sandstone
       - brand
     css: styles.css
-    toc: true
+    toc: false
 
 
 
