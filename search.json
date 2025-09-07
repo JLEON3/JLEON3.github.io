@@ -2,15 +2,15 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Jonathan Leon",
+    "title": "Hello",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Welcome to my page!\n\nAbout Me\nI’m an insurance professional pursuing a Master of Science in Insurance Management with a concentration in Applied Business Analytics at Boston University.\n\n\nPortfolio\nThis site will feature my ongoing academic projects during my studies.\n\n\nCourses\nCurrent Course\n- Cloud Analytics for Business\nCompleted Courses\n- Project Management\n- Financial Concepts\n- Enterprise Risk Management\n- Quantitative and Qualitative Decision Making\n- Business Analytics Foundations"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "projects/project1.html",
+    "href": "projects/project1.html",
+    "title": "Project 1",
     "section": "",
-    "text": "About this site"
+    "text": "Content coming soon."
   }
 ]
