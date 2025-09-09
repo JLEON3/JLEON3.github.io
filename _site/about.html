@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.34">
+<meta name="generator" content="quarto-1.8.23">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -23,7 +23,7 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -32,14 +32,15 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a4e001b6b7c8ced660ccc99dbbda6e4b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-80f6653e4bad1240590acd7234152a3f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -67,6 +68,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -79,6 +83,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Jonathan Leon</span>
     </a>
@@ -142,26 +148,62 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>As I continue progressing towards the completion of my degree this site will serve as a source for my key academic projects.</p>
+<p>As I continue progressing towards the completion of my degree this site will serve as a source for my key academic projects as well as show my status in the program.</p>
 <section id="courses" class="level1">
 <h1>Courses</h1>
-<p>import pandas as pd</p>
-</section>
-<section id="course-data" class="level1">
-<h1>Course data</h1>
-<p>courses = { “Course Name”: [ “Cloud Analytics for Business”, “Project Management”, “Financial Concepts”, “Enterprise Risk Management”, “Quantitative and Qualitative Decision Making”, “Business Analytics Foundations” ], “Course Status”: [ “Current”, “Completed”, “Completed”, “Completed”, “Completed”, “Completed” ] }</p>
-</section>
-<section id="create-dataframe-without-index" class="level1">
-<h1>Create DataFrame without index</h1>
-<p>df = pd.DataFrame(courses)</p>
-</section>
-<section id="apply-styling" class="level1">
-<h1>Apply styling</h1>
-<p>styled_df = df.style.set_table_styles([ {‘selector’: ‘th’, ‘props’: [(‘text-align’, ‘center’), (‘background-color’, ‘#0B3D91’), (‘color’, ‘white’), (‘padding’, ‘8px’), (‘font-family’, ‘Arial, sans-serif’)]}, {‘selector’: ‘td’, ‘props’: [(‘text-align’, ‘center’), (‘background-color’, ‘#D6E1F0’), (‘color’, ‘black’), # now black text (‘padding’, ‘6px’), (‘font-family’, ‘Arial, sans-serif’)]}, {‘selector’: ‘table’, ‘props’: [(‘margin-left’, ‘auto’), (‘margin-right’, ‘auto’), (‘border-collapse’, ‘collapse’), (‘width’, ‘60%’)]}]).hide(axis=‘index’) # hides the 0-5 index column</p>
-</section>
-<section id="return-the-styled-table-for-quarto-to-render" class="level1">
-<h1>Return the styled table for Quarto to render</h1>
-<p>styled_df</p>
+<div id="41a0c4bf" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display" data-execution_count="1">
+<style type="text/css">
+#T_f4568 th {
+  text-align: center;
+  color: black;
+}
+#T_f4568 td {
+  text-align: center;
+  color: black;
+}
+#T_f4568_row0_col0, #T_f4568_row0_col1, #T_f4568_row1_col0, #T_f4568_row1_col1, #T_f4568_row2_col0, #T_f4568_row2_col1, #T_f4568_row3_col0, #T_f4568_row3_col1, #T_f4568_row4_col0, #T_f4568_row4_col1, #T_f4568_row5_col0, #T_f4568_row5_col1 {
+  background-color: #D6E1F0;
+  font-family: Arial, sans-serif;
+}
+</style>
+
+<table id="T_f4568" class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th id="T_f4568_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Course Name</th>
+<th id="T_f4568_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Course Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td id="T_f4568_row0_col0" class="data row0 col0">Cloud Analytics for Business</td>
+<td id="T_f4568_row0_col1" class="data row0 col1">Current</td>
+</tr>
+<tr class="even">
+<td id="T_f4568_row1_col0" class="data row1 col0">Project Management</td>
+<td id="T_f4568_row1_col1" class="data row1 col1">Completed</td>
+</tr>
+<tr class="odd">
+<td id="T_f4568_row2_col0" class="data row2 col0">Financial Concepts</td>
+<td id="T_f4568_row2_col1" class="data row2 col1">Completed</td>
+</tr>
+<tr class="even">
+<td id="T_f4568_row3_col0" class="data row3 col0">Enterprise Risk Management</td>
+<td id="T_f4568_row3_col1" class="data row3 col1">Completed</td>
+</tr>
+<tr class="odd">
+<td id="T_f4568_row4_col0" class="data row4 col0">Quantitative and Qualitative Decision Making</td>
+<td id="T_f4568_row4_col1" class="data row4 col1">Completed</td>
+</tr>
+<tr class="even">
+<td id="T_f4568_row5_col0" class="data row5 col0">Business Analytics Foundations</td>
+<td id="T_f4568_row5_col1" class="data row5 col1">Completed</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 
 
 </section>
@@ -218,13 +260,14 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

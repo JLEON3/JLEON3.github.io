@@ -4,14 +4,14 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "As I continue progressing towards the completion of my degree this site will serve as a source for my key academic projects.\n\nCourses\nimport pandas as pd\n\n\nCourse data\ncourses = { “Course Name”: [ “Cloud Analytics for Business”, “Project Management”, “Financial Concepts”, “Enterprise Risk Management”, “Quantitative and Qualitative Decision Making”, “Business Analytics Foundations” ], “Course Status”: [ “Current”, “Completed”, “Completed”, “Completed”, “Completed”, “Completed” ] }\n\n\nCreate DataFrame without index\ndf = pd.DataFrame(courses)\n\n\nApply styling\nstyled_df = df.style.set_table_styles([ {‘selector’: ‘th’, ‘props’: [(‘text-align’, ‘center’), (‘background-color’, ‘#0B3D91’), (‘color’, ‘white’), (‘padding’, ‘8px’), (‘font-family’, ‘Arial, sans-serif’)]}, {‘selector’: ‘td’, ‘props’: [(‘text-align’, ‘center’), (‘background-color’, ‘#D6E1F0’), (‘color’, ‘black’), # now black text (‘padding’, ‘6px’), (‘font-family’, ‘Arial, sans-serif’)]}, {‘selector’: ‘table’, ‘props’: [(‘margin-left’, ‘auto’), (‘margin-right’, ‘auto’), (‘border-collapse’, ‘collapse’), (‘width’, ‘60%’)]}]).hide(axis=‘index’) # hides the 0-5 index column\n\n\nReturn the styled table for Quarto to render\nstyled_df"
+    "text": "As I continue progressing towards the completion of my degree this site will serve as a source for my key academic projects as well as show my status in the program.\n\nCourses\n\n\n\n\n\n\n\nCourse Name\nCourse Status\n\n\n\n\nCloud Analytics for Business\nCurrent\n\n\nProject Management\nCompleted\n\n\nFinancial Concepts\nCompleted\n\n\nEnterprise Risk Management\nCompleted\n\n\nQuantitative and Qualitative Decision Making\nCompleted\n\n\nBusiness Analytics Foundations\nCompleted"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Hello",
     "section": "",
-    "text": "Welcome to my page!\n\nAbout Me\nI’m an insurance professional pursuing a Master of Science in Insurance Management with a concentration in Applied Business Analytics at Boston University.\n\n\nPortfolio\nThis site will feature my ongoing academic projects during my studies.\n\n\nCourses\nCurrent Course\n- Cloud Analytics for Business\nCompleted Courses\n- Project Management\n- Financial Concepts\n- Enterprise Risk Management\n- Quantitative and Qualitative Decision Making\n- Business Analytics Foundations"
+    "text": "Welcome to my page!\n\nAbout Me\nI’m an insurance professional pursuing a Master of Science in Insurance Management with a concentration in Applied Business Analytics at Boston University.\n\n\nPortfolio\nThis site will feature my ongoing academic projects during my studies."
   },
   {
     "objectID": "projects/project1.html",

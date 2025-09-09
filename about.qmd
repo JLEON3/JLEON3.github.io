@@ -2,7 +2,7 @@
 title: "About"
 format: html
 execute:
-  echo: true        # Show the code
+  echo: false        
   warning: false
   error: false
 jupyter: python3
@@ -13,10 +13,9 @@ As I continue progressing towards the completion of my degree this site will ser
 # Courses  
 
 ```{python}
-
 import pandas as pd
 
-# Create DataFrame
+# Course data
 courses = {
     "Course Name": [
         "Cloud Analytics for Business",
@@ -36,25 +35,18 @@ courses = {
     ]
 }
 
+# Create DataFrame
 df = pd.DataFrame(courses)
 
-# Use Styler to center headers and cells, hide index
-styled_df = df.style.set_table_styles(
-    [
-        {'selector': 'th', 'props': [
-            ('text-align', 'center'), 
-            ('background-color', '#A0C1E8'),  # lighter navy blue
-            ('color', 'black'), 
-            ('font-weight', 'bold'), 
-            ('padding', '8px')
-        ]},
-        {'selector': 'td', 'props': [
-            ('text-align', 'center'), 
-            ('color', 'black'), 
-            ('padding', '6px')
-        ]}
-    ]
-).hide(axis="index")  # hides the 0-5 index column
+# Style DataFrame
+df_styled = (df.style
+   .set_table_styles([
+       {'selector': 'th', 'props': [('text-align', 'center'), ('color', 'black')]},
+       {'selector': 'td', 'props': [('text-align', 'center'), ('color', 'black')]}
+   ])
+   .set_properties(**{'background-color': '#D6E1F0', 'font-family': 'Arial, sans-serif'})
+   .hide(axis="index")  # <-- Add this line
+)
 
-# Display table in Quarto
-styled_df
+df_styled  # <-- This must be the last line for Quarto to display the styled table
+```
