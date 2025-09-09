@@ -23,7 +23,7 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -67,6 +67,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -145,20 +148,59 @@ ul.task-list li input[type="checkbox"] {
 <p>As I continue progressing towards the completion of my degree this site will serve as a source for my key academic projects as well as show my status in the program.</p>
 <section id="courses" class="level1">
 <h1>Courses</h1>
-<p>import pandas as pd</p>
-</section>
-<section id="create-dataframe" class="level1">
-<h1>Create DataFrame</h1>
-<p>courses = { “Course Name”: [ “Cloud Analytics for Business”, “Project Management”, “Financial Concepts”, “Enterprise Risk Management”, “Quantitative and Qualitative Decision Making”, “Business Analytics Foundations” ], “Course Status”: [ “Current”, “Completed”, “Completed”, “Completed”, “Completed”, “Completed” ] }</p>
-<p>df = pd.DataFrame(courses)</p>
-</section>
-<section id="use-styler-to-center-headers-and-cells-hide-index" class="level1">
-<h1>Use Styler to center headers and cells, hide index</h1>
-<p>styled_df = df.style.set_table_styles( [ {‘selector’: ‘th’, ‘props’: [ (‘text-align’, ‘center’), (‘background-color’, ‘#A0C1E8’), # lighter navy blue (‘color’, ‘black’), (‘font-weight’, ‘bold’), (‘padding’, ‘8px’) ]}, {‘selector’: ‘td’, ‘props’: [ (‘text-align’, ‘center’), (‘color’, ‘black’), (‘padding’, ‘6px’) ]} ] ).hide(axis=“index”) # hides the 0-5 index column</p>
-</section>
-<section id="display-table-in-quarto" class="level1">
-<h1>Display table in Quarto</h1>
-<p>styled_df</p>
+<div id="12b03837" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display" data-execution_count="1">
+<style type="text/css">
+#T_d77c8 th {
+  text-align: center;
+  color: black;
+}
+#T_d77c8 td {
+  text-align: center;
+  color: black;
+}
+#T_d77c8_row0_col0, #T_d77c8_row0_col1, #T_d77c8_row1_col0, #T_d77c8_row1_col1, #T_d77c8_row2_col0, #T_d77c8_row2_col1, #T_d77c8_row3_col0, #T_d77c8_row3_col1, #T_d77c8_row4_col0, #T_d77c8_row4_col1, #T_d77c8_row5_col0, #T_d77c8_row5_col1 {
+  background-color: #D6E1F0;
+  font-family: Arial, sans-serif;
+}
+</style>
+
+<table id="T_d77c8" class="caption-top table table-sm table-striped small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th id="T_d77c8_level0_col0" class="col_heading level0 col0" data-quarto-table-cell-role="th">Course Name</th>
+<th id="T_d77c8_level0_col1" class="col_heading level0 col1" data-quarto-table-cell-role="th">Course Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td id="T_d77c8_row0_col0" class="data row0 col0">Cloud Analytics for Business</td>
+<td id="T_d77c8_row0_col1" class="data row0 col1">Current</td>
+</tr>
+<tr class="even">
+<td id="T_d77c8_row1_col0" class="data row1 col0">Project Management</td>
+<td id="T_d77c8_row1_col1" class="data row1 col1">Completed</td>
+</tr>
+<tr class="odd">
+<td id="T_d77c8_row2_col0" class="data row2 col0">Financial Concepts</td>
+<td id="T_d77c8_row2_col1" class="data row2 col1">Completed</td>
+</tr>
+<tr class="even">
+<td id="T_d77c8_row3_col0" class="data row3 col0">Enterprise Risk Management</td>
+<td id="T_d77c8_row3_col1" class="data row3 col1">Completed</td>
+</tr>
+<tr class="odd">
+<td id="T_d77c8_row4_col0" class="data row4 col0">Quantitative and Qualitative Decision Making</td>
+<td id="T_d77c8_row4_col1" class="data row4 col1">Completed</td>
+</tr>
+<tr class="even">
+<td id="T_d77c8_row5_col0" class="data row5 col0">Business Analytics Foundations</td>
+<td id="T_d77c8_row5_col1" class="data row5 col1">Completed</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 
 
 </section>
