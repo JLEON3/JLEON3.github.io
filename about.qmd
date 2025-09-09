@@ -1,0 +1,60 @@
+---
+title: "About"
+format: html
+execute:
+  echo: true        # Show the code
+  warning: false
+  error: false
+jupyter: python3
+---
+
+As I continue progressing towards the completion of my degree this site will serve as a source for my key academic projects as well as show my status in the program.
+
+# Courses  
+
+```{python}
+
+import pandas as pd
+
+# Create DataFrame
+courses = {
+    "Course Name": [
+        "Cloud Analytics for Business",
+        "Project Management",
+        "Financial Concepts",
+        "Enterprise Risk Management",
+        "Quantitative and Qualitative Decision Making",
+        "Business Analytics Foundations"
+    ],
+    "Course Status": [
+        "Current",
+        "Completed",
+        "Completed",
+        "Completed",
+        "Completed",
+        "Completed"
+    ]
+}
+
+df = pd.DataFrame(courses)
+
+# Use Styler to center headers and cells, hide index
+styled_df = df.style.set_table_styles(
+    [
+        {'selector': 'th', 'props': [
+            ('text-align', 'center'), 
+            ('background-color', '#A0C1E8'),  # lighter navy blue
+            ('color', 'black'), 
+            ('font-weight', 'bold'), 
+            ('padding', '8px')
+        ]},
+        {'selector': 'td', 'props': [
+            ('text-align', 'center'), 
+            ('color', 'black'), 
+            ('padding', '6px')
+        ]}
+    ]
+).hide(axis="index")  # hides the 0-5 index column
+
+# Display table in Quarto
+styled_df

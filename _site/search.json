@@ -4,7 +4,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site"
+    "text": "As I continue progressing towards the completion of my degree this site will serve as a source for my key academic projects.\n\nCourses\nimport pandas as pd\n\n\nCourse data\ncourses = { “Course Name”: [ “Cloud Analytics for Business”, “Project Management”, “Financial Concepts”, “Enterprise Risk Management”, “Quantitative and Qualitative Decision Making”, “Business Analytics Foundations” ], “Course Status”: [ “Current”, “Completed”, “Completed”, “Completed”, “Completed”, “Completed” ] }\n\n\nCreate DataFrame without index\ndf = pd.DataFrame(courses)\n\n\nApply styling\nstyled_df = df.style.set_table_styles([ {‘selector’: ‘th’, ‘props’: [(‘text-align’, ‘center’), (‘background-color’, ‘#0B3D91’), (‘color’, ‘white’), (‘padding’, ‘8px’), (‘font-family’, ‘Arial, sans-serif’)]}, {‘selector’: ‘td’, ‘props’: [(‘text-align’, ‘center’), (‘background-color’, ‘#D6E1F0’), (‘color’, ‘black’), # now black text (‘padding’, ‘6px’), (‘font-family’, ‘Arial, sans-serif’)]}, {‘selector’: ‘table’, ‘props’: [(‘margin-left’, ‘auto’), (‘margin-right’, ‘auto’), (‘border-collapse’, ‘collapse’), (‘width’, ‘60%’)]}]).hide(axis=‘index’) # hides the 0-5 index column\n\n\nReturn the styled table for Quarto to render\nstyled_df"
   },
   {
     "objectID": "index.html",

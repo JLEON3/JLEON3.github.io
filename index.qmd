@@ -11,16 +11,4 @@ I'm an insurance professional pursuing a **Master of Science in Insurance Manage
 
 This site will feature my ongoing academic projects during my studies.  
 
-# Courses  
-
-**Current Course**  
-- Cloud Analytics for Business  
-
-**Completed Courses**  
-- Project Management  
-- Financial Concepts  
-- Enterprise Risk Management  
-- Quantitative and Qualitative Decision Making  
-- Business Analytics Foundations  
-
 
