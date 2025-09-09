@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.23">
+<meta name="generator" content="quarto-1.7.34">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -32,15 +32,14 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-0cf930f9f1c62ec9edbad7b77a763bb7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,15 +72,13 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Jonathan Leon</span>
     </a>
@@ -100,6 +97,17 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link active" href="./about.html" aria-current="page"> 
 <span class="menu-text">About</span></a>
   </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Projects</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
+        <li>
+    <a class="dropdown-item" href="./projects/project1.html">
+ <span class="dropdown-text">Project 1</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -111,9 +119,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -136,9 +142,26 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>About this site</p>
+<p>As I continue progressing towards the completion of my degree this site will serve as a source for my key academic projects as well as show my status in the program.</p>
+<section id="courses" class="level1">
+<h1>Courses</h1>
+<p>import pandas as pd</p>
+</section>
+<section id="create-dataframe" class="level1">
+<h1>Create DataFrame</h1>
+<p>courses = { “Course Name”: [ “Cloud Analytics for Business”, “Project Management”, “Financial Concepts”, “Enterprise Risk Management”, “Quantitative and Qualitative Decision Making”, “Business Analytics Foundations” ], “Course Status”: [ “Current”, “Completed”, “Completed”, “Completed”, “Completed”, “Completed” ] }</p>
+<p>df = pd.DataFrame(courses)</p>
+</section>
+<section id="use-styler-to-center-headers-and-cells-hide-index" class="level1">
+<h1>Use Styler to center headers and cells, hide index</h1>
+<p>styled_df = df.style.set_table_styles( [ {‘selector’: ‘th’, ‘props’: [ (‘text-align’, ‘center’), (‘background-color’, ‘#A0C1E8’), # lighter navy blue (‘color’, ‘black’), (‘font-weight’, ‘bold’), (‘padding’, ‘8px’) ]}, {‘selector’: ‘td’, ‘props’: [ (‘text-align’, ‘center’), (‘color’, ‘black’), (‘padding’, ‘6px’) ]} ] ).hide(axis=“index”) # hides the 0-5 index column</p>
+</section>
+<section id="display-table-in-quarto" class="level1">
+<h1>Display table in Quarto</h1>
+<p>styled_df</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -192,14 +215,13 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
